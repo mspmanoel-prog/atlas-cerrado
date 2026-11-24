@@ -1,174 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlas — Manoel e Enzo</title>
-
-<!-- ============================================================
-     AQUI JA DEIXEI PUXANDO A INTEGTAÇÃO DO CSS 
-     ============================================================ -->
-<link rel="stylesheet" href="css/style.css">
-<base target="_blank">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas — Manoel e Enzo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ==================== BARA FIXA ==================== -->
-<!-- ====AQUI VOCE PODE USAR O JS PARA MUDAR O TEMA DE ESCURO PARA CRARO === -->
-<nav>
-  <ul>
-    <li><a href="#" class="logo">Atlas</a></li>
-    <li><a href="#fauna">Fauna</a></li>
-    <li><a href="#flora">Flora</a></li>
-    <li><a href="#biodiversidade">Biodiversidade</a></li>
-    <li><a href="#faq">Dúvidas</a></li>
-    <li><button id="temaBtn" title="Alternar tema claro/escuro">Tema</button></li>
-  </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#" class="logo">Atlas</a></li>
+            <li><a href="#fauna">Fauna</a></li>
+            <li><a href="#flora">Flora</a></li>
+            <li><a href="#biodiversidade">Biodiversidade</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+            <li><button id="temaBtn" title="Alternar tema claro/escuro" aria-label="Alternar tema">Tema</button></li>
+        </ul>
+    </nav>
 
-<!-- ==================== CAPA==================== -->
-<header class="hero">
-  <h1>Atlas</h1>
-  <p>Um guia sobre a fauna, a flora e a biodiversidade do segundo maior bioma do Brasil.</p>
-  <div class="btn-grupo">
-    <a href="#fauna" class="btn btn-principal">Explorar o atlas</a>
-    <a href="#faq" class="btn btn-linha">Dúvidas frequentes</a>
-  </div>
-</header>
+    <header class="hero">
+        <h1>Atlas do Cerrado</h1>
+        <p>Um guia completo sobre a fauna, a flora e a biodiversidade do Cerrado - o segundo maior bioma do país, com riquezas que você precisa conhecer.</p>
+        <div class="btn-grupo">
+            <a href="#fauna" class="btn btn-principal">Explorar o atlas</a>
+            <a href="#faq" class="btn btn-linha">Dúvidas frequentes</a>
+        </div>
+    </header>
 
-<!-- ==================== AQUI FAUNA ==================== -->
-<section id="fauna">
-  <h2>Fauna</h2>
-  <p class="sub">Animais que fazem do Cerrado um dos ecossistemas mais diversos do país.</p>
-  <div class="grade">
+    <main>
+        <section id="fauna">
+            <h2>Fauna</h2>
+            <p class="sub">Animais que fazem do Cerrado um dos ecossistemas mais diversos do país.</p>
+            <div class="grade">
+                <article class="card">
+                    <div class="foto"><img src="pics/loboguara.png" alt="Lobo-guará"></div>
+                    <h3>Lobo-guará</h3>
+                    <p>O maior canídeo da América do Sul e um dos símbolos do Cerrado. Vive em áreas abertas e se alimenta de frutos, insetos e pequenos animais.</p>
+                </article>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI: <img src="" alt="Lobo-guará"> -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Lobo-guará</h3>
-      <p>O maior canídeo da América do Sul e um dos símbolos do Cerrado. Vive em áreas abertas e se alimenta de frutos, insetos e pequenos animais.</p>
-    </div>
+                <article class="card">
+                    <div class="foto"><img src="pics/oncapintada.png" alt="Onça-pintada"></div>
+                    <h3>Onça-pintada</h3>
+                    <p>O maior felino das Américas. Animal de hábitos solitários, presente em áreas preservadas do Cerrado.</p>
+                </article>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Onça-pintada</h3>
-      <p>O maior felino das Américas. Animal de hábitos solitários, presente em áreas preservadas do Cerrado.</p>
-    </div>
+                <article class="card">
+                    <div class="foto"><img src="pics/arara.png" alt="Arara-azul"></div>
+                    <h3>Arara-azul</h3>
+                    <p>Ave que vive nas matas de galeria do Cerrado e depende de árvores ocas, como o manduvi, para fazer seu ninho.</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Arara-azul</h3>
-      <p>Ave que vive nas matas de galeria do Cerrado e depende de árvores ocos, como o manduvi, para fazer seu ninho.</p>
-    </div>
+        <div class="faixa">
+            <h2>Mais de 11 mil espécies de plantas</h2>
+            <p>O Cerrado é considerado o bioma com a flora mais rica do mundo, com muitas espécies que só existem nele.</p>
+        </div>
 
-  </div>
-</section>
+        <section id="flora">
+            <h2>Flora</h2>
+            <p class="sub">Árvores e plantas adaptadas ao clima seco e às queimadas naturais do bioma.</p>
+            <div class="grade">
+                <article class="card">
+                    <div class="foto"><img src="pics/pequi.png" alt="Pequi"></div>
+                    <h3>Pequi</h3>
+                    <p>Fruto típico do Cerrado, muito usado na culinária regional e fonte de renda para comunidades locais.</p>
+                </article>
 
-<!-- ==================== AQUI O DESTAQUE ==================== -->
-<div class="faixa">
-  <h2>Mais de 11 mil espécies de plantas</h2>
-  <p>O Cerrado é considerado o bioma com a flora mais rica do mundo, com muitas espécies que só existem nele.</p>
-</div>
+                <article class="card">
+                    <div class="foto"><img src="pics/ipeamarelo.png" alt="Ipê-amarelo"></div>
+                    <h3>Ipê-amarelo</h3>
+                    <p>Floresce no período seco e colore o Cerrado de amarelo, servindo de alimento para abelhas e beija-flores.</p>
+                </article>
 
-<!-- ==================== FLORA ==================== -->
-<section id="flora">
-  <h2>Flora</h2>
-  <p class="sub">Árvores e plantas adaptadas ao clima seco e às queimadas naturais do bioma.</p>
-  <div class="grade">
+                <article class="card">
+                    <div class="foto"><img src="pics/buriti.png" alt="Buriti"></div>
+                    <h3>Buriti</h3>
+                    <p>Palmeira das áreas úmidas e veredas, conhecida como árvore da vida pela importância para a fauna e para o homem.</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Pequi</h3>
-      <p>Fruto típico do Cerrado, muito usado na culinária regional e fonte de renda para comunidades locais.</p>
-    </div>
+        <section id="biodiversidade">
+            <h2>Biodiversidade</h2>
+            <p class="sub">Por que a preservação do Cerrado é importante para o Brasil inteiro.</p>
+            <div class="grade">
+                <article class="card">
+                    <div class="foto"><img src="pics/agua.png" alt="Águas do Cerrado"></div>
+                    <h3>Águas</h3>
+                    <p>No Cerrado nascem rios de três grandes bacias hidrográficas: São Francisco, Tocantins e Paraná.</p>
+                </article>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Ipê-amarelo</h3>
-      <p>Floresce no período seco e colore o Cerrado de amarelo, servindo de alimento para abelhas e beija-flores.</p>
-    </div>
+                <article class="card">
+                    <div class="foto"><img src="pics/clima.png" alt="Clima do Cerrado"></div>
+                    <h3>Clima</h3>
+                    <p>A vegetação do Cerrado ajuda a formar os rios voadores, que levam chuva para outras regiões do país.</p>
+                </article>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Buriti</h3>
-      <p>Palmeira das áreas úmidas e veredas, conhecida como árvore da vida pela importância para a fauna e para o homem.</p>
-    </div>
+                <article class="card">
+                    <div class="foto"><img src="pics/ameaca.png" alt="Ameaças ao Cerrado"></div>
+                    <h3>Ameaças</h3>
+                    <p>Desmatamento e queimadas colocam o bioma em risco. Hoje, menos de 10% da área do Cerrado é protegida por lei.</p>
+                </article>
+            </div>
+        </section>
 
-  </div>
-</section>
+        <section id="faq">
+            <h2>Dúvidas frequentes</h2>
+            <p class="sub">Clique em uma pergunta para ver a resposta.</p>
 
-<!-- ==================== BIODIVERSIDADE ==================== -->
-<section id="biodiversidade">
-  <h2>Biodiversidade</h2>
-  <p class="sub">Por que a preservação do Cerrado é importante para o Brasil inteiro.</p>
-  <div class="grade">
+            <div class="faq">
+                <div class="faq-item">
+                    <button type="button" aria-expanded="false">Onde fica o Cerrado? <span>+</span></button>
+                    <div class="resposta"><p>O Cerrado ocupa cerca de 2 milhões de km², no Centro-Oeste e em partes do Norte, Nordeste e Sudeste — cerca de 22% do território brasileiro.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" aria-expanded="false">Por que o Cerrado é chamado de berçário das águas? <span>+</span></button>
+                    <div class="resposta"><p>Porque é nas matas do Cerrado que nascem grandes rios como o São Francisco e o Araguaia, que abastecem várias regiões do país.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" aria-expanded="false">Como posso ajudar na preservação? <span>+</span></button>
+                    <div class="resposta"><p>Evitando o desperdício de água, não fazendo queimadas, consumindo produtos sustentáveis e divulgando a importância do bioma.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" aria-expanded="false">Qual é a origem deste site? <span>+</span></button>
+                    <div class="resposta"><p>Projeto final da disciplina de Web-Design, desenvolvido com HTML5, CSS3 e JavaScript.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Águas</h3>
-      <p>No Cerrado nascem rios de três grandes bacias hidrográficas: São Francisco, Tocantins e Paraná.</p>
-    </div>
+    <footer>
+        <p class="equipe">Desenvolvido por Manoel e Enzo</p>
+        <p class="curso">IFB - Instituto Federal de Brasília — Curso Técnico em Desenvolvimento de Sistemas — Web-Design, 2026/2</p>
+        <hr>
+        <p>Atlas de Fauna, Flora e Biodiversidade do Cerrado · HTML5, CSS3 e JavaScript</p>
+    </footer>
 
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Clima</h3>
-      <p>A vegetação do Cerrado ajuda a formar os rios voadores, que levam chuva para outras regiões do país.</p>
-    </div>
-
-    <div class="card">
-      <!-- COLOCAR IMAGEM AQUI -->
-      <div class="foto">Espaço para imagem</div>
-      <h3>Ameaças</h3>
-      <p>Desmatamento e queimadas colocam o bioma em risco. Hoje, menos de 10% da área do Cerrado é protegida por lei.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ==================== DÚVIDAS coloque JS aqui ==================== -->
-<section id="faq">
-  <h2>Dúvidas frequentes</h2>
-  <p class="sub">Clique em uma pergunta para ver a resposta.</p>
-
-  <div class="faq">
-    <div class="faq-item">
-      <button>Onde fica o Cerrado? <span>+</span></button>
-      <div class="resposta"><p>O Cerrado ocupa cerca de 2 milhões de km², no Centro-Oeste e em partes do Norte, Nordeste e Sudeste — cerca de 22% do território brasileiro.</p></div>
-    </div>
-    <div class="faq-item">
-      <button>Por que o Cerrado é chamado de berçário das águas? <span>+</span></button>
-      <div class="resposta"><p>Porque é nas matas do Cerrado que nascem grandes rios como o São Francisco e o Araguaia, que abastecem várias regiões do país.</p></div>
-    </div>
-    <div class="faq-item">
-      <button>Como posso ajudar na preservação? <span>+</span></button>
-      <div class="resposta"><p>Evitando o desperdício de água, não fazendo queimadas, consumindo produtos sustentáveis e divulgando a importância do bioma.</p></div>
-    </div>
-    <div class="faq-item">
-      <button>Qual é a origem deste site? <span>+</span></button>
-      <div class="resposta"><p>Projeto final da disciplina de Web-Design, desenvolvido com HTML5, CSS3 e JavaScript.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== RODAPÉ COM O NOSSO NOMES ==================== -->
-<footer>
-  <p class="equipe">Desenvolvido por Manoel e Enzo</p>
-  <p class="curso">IFB - Instituto Federal de Brasília — Curso Técnico em Desenvolvimento de Sistemas — Web-Design, 2026/2</p>
-  <hr>
-  <p>Atlas de Fauna, Flora e Biodiversidade do Cerrado · HTML5, CSS3 e JavaScript</p>
-</footer>
-
-<!-- ============================================================
-     JA DEIXEI PUXANDO O JS EXTERNO AQUI
-     ============================================================ -->
-<script src="js/script.js" defer></script>
-
+    <script src="js/script.js" defer></script>
 </body>
 </html>
